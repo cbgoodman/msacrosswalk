@@ -38,7 +38,7 @@ Merging with `statecode` and `countycode`
 By default, `msacrosswalk` will generate a new variable, `_merge`, to indicate the merged results.  If you do not want to create this variable, specify `nogenerate`.
 This will keep matched observations and unmatched master observations.
 ```Stata
-. msacrosswalk, fips(county) nogenerate
+. msacrosswalk, fips(county) vintage(year) nogenerate
 ```
 
 ## Limitations
