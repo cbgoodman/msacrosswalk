@@ -1,0 +1,12 @@
+v 3
+d msacrosswalk: Stata program for merging U.S. MSA/CBSA identifiers
+d
+d Requires: Stata version 12.1+
+d
+d Distribution-Date: 07132018
+d
+d Author: Christopher B. Goodman
+d Contact: cbgoodman@unomaha.edu
+d
+d
+p msacrosswalk Stata program for merging U.S. MSA/CBSA identifiers

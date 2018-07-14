@@ -1,0 +1,13 @@
+v 3
+d msacrosswalk. Stata program for merging U.S. MSA/CBSA identifiers
+d {bf:Christopher B. Goodman, School of Public Administration, University of Nebraska at Omaha}
+d
+d After installation, see help {bf:msacrosswalk}.
+d
+d Distribution-Date: 07132018
+d
+d Support: email cbgoodman@unomaha.edu
+d
+f msacrosswalk.ado
+f msacrosswalk.sthlp
+f msacrosswalk_data.ado
