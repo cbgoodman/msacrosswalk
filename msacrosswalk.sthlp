@@ -22,9 +22,9 @@ with previous versions, but it has not been tested in those environments.
 
 One of the following {cmd:arguments} is required.
 
-phang}
+{phang}
 {opt v:intage(string)} This option is required and determines which delineation file to be used.
-Currently, CBSA/CSA from years 2017, 2015, and 2013 are available. 
+Currently, CBSA/CSA from years 2017, 2015, and 2013 are available.
 
 {phang}
 {opt s:tatefips(string)} Use this option to merge using the two-digit state FIPS code.
@@ -64,19 +64,19 @@ observations and unmatched master observations.
 county FIPS codes.{p_end}
 
 {pstd}Merging with {cmd:fips}{p_end}
-{phang2}{cmd:. msacrosswalk, fips(}{it:county}{cmd:)}{p_end}
+{phang2}{cmd:. msacrosswalk, fips(}{it:county}{cmd:)} {cmd:vintage(}{it:year}{cmd:)}{p_end}
 
 {pstd}Merging with {cmd:statefips} and {cmd:countyfips}{p_end}
-{phang2}{cmd:. msacrosswalk, statefips(}{it:stfips}{cmd:) countyfips(}{it:cofips}{cmd:)}{p_end}
+{phang2}{cmd:. msacrosswalk, statefips(}{it:stfips}{cmd:) countyfips(}{it:cofips}{cmd:)}  {cmd:vintage(}{it:year}{cmd:)}{p_end}
 
 {pstd}Merging with {cmd:statecode} and {cmd:countycode}{p_end}
-{phang2}{cmd:. msacrosswalk, statecode(}{it:stcode}{cmd:) countcode(}{it:cocode}{cmd:)}{p_end}
+{phang2}{cmd:. msacrosswalk, statecode(}{it:stcode}{cmd:) countcode(}{it:cocode}{cmd:)}  {cmd:vintage(}{it:year}{cmd:)}{p_end}
 
 {pstd}By default, {cmd:countyfips} will generate a new variable, {cmd:_merge}, to indicate
 the merged results.  If you do not want to create this variable, specify {cmd:nogenerate}.
 This will keep matched observations and unmatched master observations.{p_end}
 
-{phang2}{cmd:. msacrosswalk, fips(}{it:county}{cmd:) nogenerate}{p_end}
+{phang2}{cmd:. msacrosswalk, fips(}{it:county}{cmd:)}  {cmd:vintage(}{it:year}{cmd:) nogenerate}{p_end}
 
 {title:Limitations}
 {pstd}FIPS codes are available for U.S counties, county equivalents, and territories.
