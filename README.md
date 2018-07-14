@@ -18,21 +18,21 @@ net install msacrosswalk, from(<local source>) replace
 ```
 
 ## Using msacrosswalk
-`msacrosswalk` offers three methods of merging using either five-digit county FIPS codes, the combination of two-digit state FIPS and three-digit county FIPS codes, or the combination of two-digit state Census codes and three-digit county Census codes.
+`msacrosswalk` offers three methods of merging using either five-digit county FIPS codes, the combination of two-digit state FIPS and three-digit county FIPS codes, or the combination of two-digit state Census codes and three-digit county Census codes. Vintage must be specified and determines which delineation file to be used. See [here](https://www.census.gov/geographies/reference-files/time-series/demo/metro-micro/delineation-files.html) for more information.
 
 Merging with `fips`
 ```Stata
-. msacrosswalk, fips(county)
+. msacrosswalk, fips(county) vintage(year)
 ```
 
 Merging with `statefips` and `countyfips`
 ```Stata
-. msacrosswalk, statefips(stfips) countyfips(cofips)
+. msacrosswalk, statefips(stfips) countyfips(cofips) vintage(year)
 ```
 
 Merging with `statecode` and `countycode`
 ```Stata
-. msacrosswalk, statecode(stcode) countycode(cocode)
+. msacrosswalk, statecode(stcode) countycode(cocode) vintage(year)
 ```
 
 By default, `msacrosswalk` will generate a new variable, `_merge`, to indicate the merged results.  If you do not want to create this variable, specify `nogenerate`.
@@ -46,7 +46,6 @@ This will keep matched observations and unmatched master observations.
 * `msacrosswalk` uses the more recent FIPS code for Miami-Dade county (12086) rather than the FIPS code for Dade county (12025). The Census state (10) and county (13) codes remain unchanged.
 
 ## Next steps
-* Add other recent CBSA/CSA definitions
 * Add historical delineation files
 
 ## Bugs

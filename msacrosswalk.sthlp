@@ -22,6 +22,10 @@ with previous versions, but it has not been tested in those environments.
 
 One of the following {cmd:arguments} is required.
 
+phang}
+{opt v:intage(string)} This option is required and determines which delineation file to be used.
+Currently, CBSA/CSA from years 2017, 2015, and 2013 are available. 
+
 {phang}
 {opt s:tatefips(string)} Use this option to merge using the two-digit state FIPS code.
 (string) specifies the variable name in the master dataset. {cmd:countyfips} is required
