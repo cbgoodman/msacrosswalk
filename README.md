@@ -1,5 +1,5 @@
 # msacrosswalk
-`msacrosswalk` is a simple Stata crosswalk program for adding 2017 vintage CBSA/CSA codes, CBSA/CSA names, metropolitan/micropolitan, and central/outlying indicators that may be missing from your dataset.
+`msacrosswalk` is a simple Stata crosswalk program for adding 2013, 2015, or 2017 vintage CBSA/CSA codes, CBSA/CSA names, metropolitan/micropolitan, and central/outlying indicators that may be missing from your dataset.
 
 ## Prerequisites
 
